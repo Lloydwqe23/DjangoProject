@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+      <h2>Registration</h2>
+    </div>
+
+
+    <div class="row justify-content-md-center">
+      <div class="col-md-6 col-sm-11">
+        <form class="needs-validation" validate="">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="id_email" class="form-label">Email</label>
+              <input type="text" class="form-control" id="id_email" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="id_username" class="form-label">Username</label>
+              <input type="text" class="form-control" id="id_username">
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="id_password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="id_password" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <label for="country" class="form-label">Country</label>
+              <select class="form-select" id="country" required="">
+                <option value="">Choose...</option>
+                <option>United States</option>
+                <option>United Kingdom</option>
+                <option>France</option>
+                <option>Ukraine</option>
+                <option>Germany</option>
+                <option>Italy</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+
+              <div class="col-md-2">
+                <label for="currency" class="form-label">currency</label>
+                <select class="form-select" id="currency" required="">
+                  <option value="">Choose...</option>
+                  <option>S</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid currency.
+                </div>
+              </div>
+          </div>
+          <hr class="my-4">
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="id_send_push">
+            <label class="form-check-label" for="id_send_push">Send Push</label>
+          </div>
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Registration</button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}
